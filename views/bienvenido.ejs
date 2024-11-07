@@ -9,7 +9,7 @@
     <!--stilos de el fondo-->
     <style>
         body {
-            background-color: #162c19;
+            background-color: #1f2627;
             color: #0e0f7f;
         }
         .container {
@@ -27,11 +27,11 @@
 <body>
     <header>
         <!--barra de navegacion-->
-        <nav class="navbar navbar-dark bg-success">
+        <nav class="navbar navbar-dark bg-secondary">
             <div class="container-fluid">
                 <span class="navbar-text">
                     <h3>
-                        fulanito
+                        <%= usuario.nombre1 %>
                     </h3>
                 </span>
 
@@ -45,9 +45,9 @@
     </header>
     <br><br><br>
     <!--targeta de bienvenida-->
-    <div class="card mx-auto bg-success " style="width: 50rem;">
+    <div class="card mx-auto bg-secondary " style="width: 50rem;">
         <div class="card-body " style="position: relative;">
-            <h1 style="color: #e0e0e0;">Bienvenido  fulanito</h1>
+            <h1 style="color: #e0e0e0;">Bienvenido <%= usuario.nombre1 %> </h1>
             
             <form action="/datos" method="get" >
                 <input type="submit" value="Ver datos personales" class="btn btn-outline-light">

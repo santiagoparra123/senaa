@@ -11,7 +11,7 @@
     <style>
         
         body {
-            background-color: #162c19;
+            background-color: #1f2627;
             color: #e0e0e0;
         }
 
@@ -33,11 +33,11 @@
 <body>
     <header>
         <!--barra de navegacion-->
-        <nav class="navbar navbar-dark bg-success">
+        <nav class="navbar navbar-dark bg-secondary">
             <div class="container-fluid">
                 <span class="navbar-text">
                     <h3>
-                        fulanito
+                        <%= datosUsuario.nombre1 %>
                     </h3>
                 </span>
 
@@ -53,7 +53,7 @@
         </nav>
     </header>
     <!-- tabla de los datos personales-->
-    <div class="container bg-success p-5 rounded">
+    <div class="container bg-secondary p-5 rounded">
 
 
         <h5 class="mt-4">Datos personales</h5>
@@ -61,52 +61,52 @@
             <div class="row mb-2">
                 <div class="col-md-6">
                     <label for="nombre1" class="form-label">Primer nombre</label>
-                    <input type="text" id="nombre1" class="form-control" 111" disabled>
+                    <input type="text" id="nombre1" class="form-control" placeholder="<%= datosUsuario.nombre1 %>" disabled>
                 </div>
                 <div class="col-md-6">
                     <label for="nombre2" class="form-label">Segundo nombre</label>
-                    <input type="text" id="nombre2" class="form-control" disabled>
+                    <input type="text" id="nombre2" class="form-control" placeholder="<%= datosUsuario.nombre2 %>" disabled>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="apellido1" class="form-label">Primer apellido</label>
-                    <input type="text" id="apellido1" class="form-control" disabled>
+                    <input type="text" id="apellido1" class="form-control" placeholder="<%= datosUsuario.apellido1 %>" disabled>
                 </div>
 
                 <div class="col-md-6">
                     <label for="genero" class="form-label">Segundo apellido</label>
-                    <input type="text" id="apellido2" class="form-control" disabled>
+                    <input type="text" id="apellido2" class="form-control" placeholder="<%= datosUsuario.apellido2 %>" disabled>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="cumple" class="form-label">Fecha de nacimiento</label>
-                    <input type="text" id="cumple" class="form-control" disabled>
+                    <input type="text" id="cumple" class="form-control" placeholder="<%= datosUsuario.fecha_nacimiento %>" disabled>
                 </div>
                 <div class="col-md-6">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="text" id="telefono" class="form-control" disabled>
+                    <input type="text" id="telefono" class="form-control" placeholder="<%= datosUsuario.telefono %>" disabled>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="direccion" class="form-label">Dirección</label>
-                    <input type="text" id="direccion" class="form-control" disabled>
+                    <input type="text" id="direccion" class="form-control" placeholder="<%= datosUsuario.direccion %>" disabled>
                 </div>
                 <div class="col-md-6">
                     <label for="correo" class="form-label">Correo electrónico</label>
-                    <input type="email" id="correo" class="form-control" disabled>
+                    <input type="email" id="correo" class="form-control" placeholder="<%= datosUsuario.correo %>" disabled>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="rh" class="form-label">Rh</label>
-                    <input type="text" id="rh" class="form-control" disabled>
+                    <input type="text" id="rh" class="form-control" placeholder="<%= datosUsuario.rh %>" disabled>
                 </div>
                 <div class="col-md-6">
                     <label for="ocupacion" class="form-label"> Ocupacion</label>
-                    <input type="text" id="ocupacion" class="form-control" disabled>
+                    <input type="text" id="ocupacion" class="form-control"placeholder="<%= datosUsuario.ocupacion %>" disabled>
                 </div>
             </div>
 
@@ -114,11 +114,11 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="ciudad" class="form-label">Ciudad</label>
-                    <input type="text" id="ciudad" class="form-control" disabled>
+                    <input type="text" id="ciudad" class="form-control" placeholder="<%= datosUsuario.ciudad %>" disabled>
                 </div>
                 <div class="col-md-6">
                     <label for="nidentificacion" class="form-label">Número de identificacion</label>
-                    <input type="text" id="nidentificacion" class="form-control" disabled>
+                    <input type="text" id="nidentificacion" class="form-control" placeholder="<%= datosUsuario.identificacion %>" disabled>
                 </div>
             </div>
 
