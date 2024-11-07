@@ -1,0 +1,30 @@
+CREATE DATABASE jefe;
+
+USE jefe;
+
+
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre1 VARCHAR(50) NOT NULL,
+    nombre2 VARCHAR(50),
+    apellido1 VARCHAR(50) NOT NULL,
+   apellido2 VARCHAR(50),
+    telefono VARCHAR(15),
+    fecha_nacimiento varchar (15),
+    rh VARCHAR(3),
+    direccion VARCHAR(100),
+    correo VARCHAR(100) UNIQUE NOT NULL,
+    ciudad VARCHAR(50),
+    identificacion VARCHAR(20) UNIQUE NOT NULL,
+    ocupacion VARCHAR(50)
+    
+);
+
+SELECT * FROM usuarios;
+INSERT INTO usuarios (nombre1, nombre2, apellido1, apellido2, telefono, fecha_nacimiento, rh, direccion, correo, ciudad, identificacion, ocupacion) 
+VALUES ('duvan', 'Santiago', 'parra', 'olarte', '3213854704', '14/11/2006', 'O+', 'vereda corocito', 'duvansantiagoparrao14@gmail.com', 'tame', '1116857850', 'Estudiante');
+SELECT * FROM usuarios WHERE correo = 'duvansantiagoparrao14@gmail.com';
+
+
+SELECT * FROM usuarios WHERE nombre1 = 'duvan' AND identificacion = '1116857850';
